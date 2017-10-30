@@ -6,7 +6,7 @@ public:
         vector <int> res;
         while(l<=r)
         {
-            int mid = (l+r)/2;
+            int mid=(l+r)/2;
             if(a[mid]>=target)
             {
                 if(a[mid]==target)
@@ -36,7 +36,7 @@ public:
             }
             else if(a[mid]<=target)
             {
-                l = mid+1;
+                l= mid+1;
             }
         }
         v2 = l;
