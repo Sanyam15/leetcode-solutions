@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        int flag = 0;
+        int flag= 0;
         if(x<0)
             flag=1;
         x = abs(x);
@@ -9,7 +9,7 @@ public:
         int ans = 0;
         while(temp!=0)
         {
-            ans = ans*10 + temp%10;
+            ans =( ans*10 )+ temp%10;
             temp/=10;
         }
         if(flag)
